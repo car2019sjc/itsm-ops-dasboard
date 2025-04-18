@@ -21,14 +21,15 @@ export function DashboardHeader({
     <header className="bg-[#151B2B] py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <div className="flex items-center logo-container">
-            <img 
-              src="/onset-logo.svg" 
-              alt="OnSet Logo" 
-              className="h-20 w-auto mr-3" 
-              style={{ height: '60px', width: 'auto' }} /* Increased to 60px for better visibility */
-            />
-            <h1 className="ml-3 text-2xl font-bold text-white">
+          <div className="flex items-center space-x-2">
+            <div className="flex items-center">
+              <span className="text-[#4F9BFF] text-2xl mr-2">⚡</span>
+              <h1 className="text-2xl font-semibold">
+                <span className="text-[#1E3A8A] font-bold">On</span>
+                <span className="text-orange-500 font-bold">Set</span>
+              </h1>
+            </div>
+            <h1 className="text-2xl font-bold text-white ml-4">
               {title || "IT Operations Dashboard"}
               <span className="ml-2 px-2 py-1 text-xs font-bold bg-yellow-500/20 text-yellow-400 rounded-full">
                 Beta
