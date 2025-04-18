@@ -20,5 +20,9 @@ export default defineConfig({
   },
   esbuild: {
     logOverride: { 'this-is-undefined-in-esm': 'silent' }
+  },
+  define: {
+    'import.meta.env.VITE_AUTH_USERNAME': JSON.stringify('OnSet-ITSM'),
+    'import.meta.env.VITE_AUTH_PASSWORD': JSON.stringify('Up2025It')
   }
 });
